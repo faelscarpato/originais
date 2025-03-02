@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Álbum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <!-- Menu Lateral -->
+ <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <span class="icon"><img src="logo.png" alt="Logo" class="logo"></span> <a href="index.html" class="logo-text">ScFotos</a> <!-- Substitua por sua imagem -->
+        
+    </div>
+    <hr class="divider">
+    <ul class="sidebar-menu">
+        <li>
+            <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/ios/50/home--v1.png" alt="home--v1"/></span>
+            <a href="index.html" class="menu-text">Home</a>
+        </li>
+        <li>
+            <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/ios/50/about.png" alt="home--v1"/></span>
+            <a href="#sobre" class="menu-text">Sobre</a>
+        </li>
+        <li>
+            <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/dotty/50/gallery.png" alt="home--v1"/></span>
+            <a href="#galeria" class="menu-text">Galeria de Álbuns</a>
+        </li>
+        <li>
+            <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff//ios/50/camera--v1.png" alt="home--v1"/></span>
+            <a href="login.html" class="menu-text">Meu Álbum</a>
+        </li>
+        <li>
+            <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/ios/50/whatsapp--v1.png" alt="home--v1"/></span>
+            <a href="#contato" class="menu-text">Contato</a>
+        </li>
+    </ul>
+    <span id="toggleSidebar" class="toggle-btn">☰</span>
+</div>
+
+    <!-- Conteúdo da Página -->
+    <div class="container">
+        <div id="login-section" class="login-section">
+            <h1>Meu Álbum</h1>
+            <p>Faça login para acessar suas fotos</p>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Nome de Usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="loginError" class="error"></p>
+        </div>
+        <div id="album-content" class="album-content" style="display: none;">
+            <h1>Seu Álbum</h1>
+            <p>Bem-vindo ao seu álbum privado!</p>
+            <!-- Aqui você pode adicionar o conteúdo do álbum -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
