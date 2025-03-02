@@ -7,13 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Escolha as Fotos para edição</h1>
-        <p>Clique nas fotos para vê-las em tamanho maior e clique no botão verde, no final da pagina clique em enviar fotos escolhidas pelo whatsapp.</p>
-        <div id="gallery" class="gallery"></div>
-        <div class="footer">
-            <span id="selectedCount">0 fotos selecionadas</span>
-            <button onclick="sendToWhatsApp()">Enviar escolhas pelo WhatsApp</button>
+    <!-- Menu Lateral -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="icon"><img src="logo.png" alt="Logo" class="logo"></span> <a href="index.html" class="logo-text">ScFotos</a> <!-- Substitua por sua imagem -->
+            
+        </div>
+        <hr class="divider">
+        <ul class="sidebar-menu">
+            <li>
+                <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/ios/50/home--v1.png" alt="home--v1"/></span>
+                <a href="index.html" class="menu-text">Home</a>
+            </li>
+            <li>
+                <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/ios/50/about.png" alt="home--v1"/></span>
+                <a href="#sobre" class="menu-text">Sobre</a>
+            </li>
+            <li>
+                <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/dotty/50/gallery.png" alt="home--v1"/></span>
+                <a href="#galeria" class="menu-text">Galeria de Álbuns</a>
+            </li>
+            <li>
+                <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff//ios/50/camera--v1.png" alt="home--v1"/></span>
+                <a href="login.html" class="menu-text">Meu Álbum</a>
+            </li>
+            <li>
+                <span class="icon"><img width="30" height="30" src="https://img.icons8.com/ffffff/ios/50/whatsapp--v1.png" alt="home--v1"/></span>
+                <a href="#contato" class="menu-text">Contato</a>
+            </li>
+        </ul>
+        <span id="toggleSidebar" class="toggle-btn">☰</span>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <div class="container">
+            <h1>Escolha suas fotos favoritas</h1>
+            <p>Clique nas fotos para vê-las em tamanho maior e selecione as que você gostou!</p>
+            <div id="gallery" class="gallery"></div>
+            <div class="footer">
+                <span id="selectedCount">0 fotos selecionadas</span>
+                <button onclick="sendToWhatsApp()">Enviar escolhas pelo WhatsApp</button>
+            </div>
         </div>
     </div>
 
