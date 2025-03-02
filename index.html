@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha as Fotos para edição</h1>
+        <p>Clique nas fotos para vê-las em tamanho maior e clique no botão verde, no final da pagina clique em enviar fotos escolhidas pelo whatsapp.</p>
+        <div id="gallery" class="gallery"></div>
+        <div class="footer">
+            <span id="selectedCount">0 fotos selecionadas</span>
+            <button onclick="sendToWhatsApp()">Enviar escolhas pelo WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">×</span>
+        <button id="prevButton" class="nav-btn prev">◄</button>
+        <img id="modalImage" class="modal-content" alt="Foto em tela cheia">
+        <button id="nextButton" class="nav-btn next">►</button>
+        <button id="chooseButton" class="choose-btn">Escolher</button>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top">▲</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
